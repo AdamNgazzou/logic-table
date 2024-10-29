@@ -116,7 +116,7 @@ const Logic = () => {
 
                 </div>
 
-                <button className={`button ${isDarkMode ? 'dark' : ''}`} onClick={generateTruthTableWithResults}>Générer</button>
+                <button className={`button ${isDarkMode ? 'dark' : ''}`} onClick={generateTruthTableWithResults}>Generate</button>
                 <button className={`button ${isDarkMode ? 'dark' : ''}`} onClick={toggleTheme}>
                     {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
                 </button>
@@ -130,7 +130,7 @@ const Logic = () => {
                                     {truthTable.variables.split("").map((variable, index) => (
                                         <th key={index}>{variable}</th>
                                     ))}
-                                    <th>Résultat</th>
+                                    <th>Results</th>
                                 </tr>
                             </thead>
                             <tbody>
